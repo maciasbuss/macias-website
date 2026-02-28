@@ -1,218 +1,37 @@
-/* GLOBAL STYLES */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: Arial, sans-serif;
-  background: #f4f6f4;
-  color: #333;
-  line-height: 1.6;
-  animation: fadeIn 1s ease-in;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Macias Landscaping & Remodeling</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-/* Fade-in animation for page load */
-@keyframes fadeIn {
-  from { opacity: 0; }
-  to { opacity: 1; }
-}
+<body>
+  <header>
+    <div class="logo">Macias Landscaping & Remodeling</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="services.html">What We Do</a>
+      <a href="request.html">Request a Quote</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
 
-/* Smooth hover animations */
-* {
-  transition: 0.25s ease;
-}
+  <section class="page-header">
+    <h1>Contact Us</h1>
+    <p>Serving Tulsa, Broken Arrow, Bixby, Jenks & more</p>
+  </section>
 
-/* HEADER */
-header {
-  background: #2e7d32;
-  color: white;
-  padding: 18px 25px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
-}
+  <section class="contact-info">
+    <h2>Reach us anytime</h2>
+    <p>Phone: <strong>918-570-3422</strong></p>
+    <p>Email: <strong>Macias.services918@gmail.com</strong></p>
+    <p>Hours: <strong>Monday–Saturday, 7 AM to 5 PM</strong></p>
+  </section>
 
-header .logo {
-  font-size: 22px;
-  font-weight: bold;
-}
-
-nav a {
-  color: white;
-  margin-left: 20px;
-  text-decoration: none;
-  font-weight: bold;
-  padding-bottom: 3px;
-  border-bottom: 2px solid transparent;
-}
-
-nav a:hover {
-  border-bottom: 2px solid white;
-}
-
-/* PAGE HEADERS */
-.page-header {
-  text-align: center;
-  padding: 60px 20px;
-  background: linear-gradient(to bottom, #e8f5e9, #f4f6f4);
-  animation: slideUp 0.7s ease;
-}
-
-@keyframes slideUp {
-  from { transform: translateY(20px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-}
-
-/* PAGE SECTIONS (cards) */
-.contact-info,
-.contact-form,
-.service-card,
-.quote-section {
-  max-width: 700px;
-  margin: 35px auto;
-  padding: 25px;
-  background: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
-  animation: fadeIn 0.6s ease;
-}
-
-/* TITLES */
-h2 {
-  margin-bottom: 15px;
-  font-size: 24px;
-  color: #2e7d32;
-}
-
-/* CONTACT INFO */
-.contact-info p {
-  margin: 10px 0;
-  font-size: 18px;
-}
-
-/* EMAIL BUTTON */
-.contact-info a[href^="mailto"] {
-  display: inline-block;
-  margin-top: 15px;
-  padding: 12px 18px;
-  background: #2e7d32;
-  color: white;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-}
-
-.contact-info a[href^="mailto"]:hover {
-  background: #256528;
-  transform: translateY(-2px);
-}
-
-/* CONTACT FORM */
-.contact-form form {
-  display: flex;
-  flex-direction: column;
-}
-
-.contact-form label {
-  margin: 10px 0 5px;
-  font-weight: bold;
-}
-
-.contact-form input,
-.contact-form textarea {
-  padding: 12px;
-  border: 1px solid #bcbcbc;
-  border-radius: 8px;
-  font-size: 16px;
-  background: #f9f9f9;
-}
-
-.contact-form input:focus,
-.contact-form textarea:focus {
-  border-color: #2e7d32;
-  background: #ffffff;
-}
-
-.contact-form button {
-  margin-top: 15px;
-  padding: 14px;
-  background: #2e7d32;
-  color: white;
-  border: none;
-  border-radius: 8px;
-  font-size: 17px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-.contact-form button:hover {
-  background: #256528;
-  transform: translateY(-2px);
-}
-
-/* FOOTER */
-footer {
-  text-align: center;
-  padding: 25px;
-  background: #2e7d32;
-  color: white;
-  margin-top: 50px;
-  font-size: 15px;
-}
-
-/* HOMEPAGE SECTIONS (optional if you have them) */
-.home-hero {
-  padding: 80px 20px;
-  text-align: center;
-  background: url("your-image.jpg") center/cover no-repeat;
-  color: white;
-  text-shadow: 1px 1px 4px black;
-}
-
-.home-hero h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
-}
-
-.home-hero p {
-  font-size: 20px;
-}
-
-.home-button {
-  padding: 14px 22px;
-  background: #2e7d32;
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  border-radius: 8px;
-  display: inline-block;
-  margin-top: 15px;
-}
-
-.home-button:hover {
-  background: #256528;
-  transform: scale(1.05);
-}
-
-/* MOBILE */
-@media (max-width: 600px) {
-  header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  nav a {
-    margin-left: 10px;
-    margin-right: 10px;
-    display: inline-block;
-  }
-
-  .contact-info,
-  .contact-form {
-    margin: 20px;
-    padding: 20px;
-  }
-
-  .home-hero h1 {
-    font-size: 32px;
-  }
-}
+  <footer>
+    © 2024 Macias Landscaping & Remodeling • Tulsa, OK • 918-570-3422
+  </footer>
+</body>
+</html>
