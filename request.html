@@ -1,60 +1,60 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Request a Quote | Macias Landscaping & Remodeling</title>
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Request a Quote | Macias Landscaping & Remodeling</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header>
-    <div class="logo">Macias Landscaping & Remodeling</div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="services.html">What We Do</a>
-      <a href="request.html">Request a Quote</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </header>
+<header>
+<div class="logo">Macias Landscaping & Remodeling</div>
+<nav>
+<a href="index.html">Home</a>
+<a href="services.html">What We Do</a>
+<a href="request.html">Request a Quote</a>
+<a href="contact.html">Contact</a>
+</nav>
+</header>
 
-  <section class="page-header">
-    <h1>Request a Free Quote</h1>
-    <p>Tell us about your project and we’ll get back to you shortly.</p>
-  </section>
+<section class="page-header">
+<h1>Request a Free Quote</h1>
+<p>Fill out the form below and we will contact you shortly.</p>
+</section>
 
-  <section class="form-section">
-    <form class="quote-form">
-      <label>Name</label>
-      <input type="text" placeholder="Your name" required />
+<section class="form-section">
+<form class="quote-form" action="https://formspree.io/f/xbdavkea" method="POST">
 
-      <label>Phone</label>
-      <input type="text" placeholder="918-570-3422" required />
+<label>Name</label>
+<input type="text" name="name" placeholder="Your name" required />
 
-      <label>Email</label>
-      <input type="text" placeholder="you@example.com" required />
+<label>Phone</label>
+<input type="text" name="phone" placeholder="918-570-3422" required />
 
-      <label>Service Needed</label>
-      <select>
-        <option>Landscaping</option>
-        <option>Hardscaping</option>
-        <option>Remodeling</option>
-        <option>Kitchen or Bathroom</option>
-        <option>Fencing</option>
-        <option>Painting</option>
-        <option>Plumbing</option>
-      </select>
+<label>Email</label>
+<input type="email" name="email" placeholder="you@example.com" required />
 
-      <label>Project Details</label>
-      <textarea placeholder="Describe your project"></textarea>
+<label>Service Needed</label>
+<select name="service">
+<option>Landscaping</option>
+<option>Hardscaping</option>
+<option>Remodeling</option>
+<option>Kitchen or Bathroom</option>
+<option>Fencing</option>
+<option>Painting</option>
+<option>Plumbing</option>
+</select>
 
-      <button type="submit" class="btn">Submit Request</button>
-    </form>
-  </section>
+<label>Project Details</label>
+<textarea name="details" placeholder="Describe your project" required></textarea>
 
-  <footer>
-    © 2024 Macias Landscaping & Remodeling • Tulsa, OK • 918-570-3422
-  </footer>
+<button type="submit" class="btn">Submit Request</button>
+</form>
+</section>
+
+<footer>
+© 2024 Macias Landscaping & Remodeling • Tulsa, OK • 918-570-3422 • Macias.services918@gmail.com
+</footer>
 </body>
 </html>
